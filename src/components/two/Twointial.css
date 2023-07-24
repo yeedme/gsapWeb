@@ -1,0 +1,21 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 50%;
+  font-size: 30px;
+  color: white;
+
+}
+.red {
+  background-color: #d55b5b;
+}
+.green {
+  background-color: #5bc3d5;
+}
+.blue {
+  background-color: #c13fab;
+}
+.yellow {
+  background-color: #ce6060;
+}

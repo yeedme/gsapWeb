@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0%;
+    margin: 0;
+}
+.TextAnimation{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+
+}
+.LeftclipPath{
+   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.pixlFont{
+    font-family: Lucida Bright
+}
+::selection{
+    color: #38F997;
+    background-color: black;
+}
+.primaryColor{
+    background-color:  #34de89;
+}
+.primaryBorderColor{
+    border-color: #34de89;
+}
+.otherVw{
+    width: 12vw;
+}
+.test{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+.O_transition{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar
+{
+   display: none;
+}
+::-webkit-scrollbar-track
+{
+   display: none;
+}
+.page5bgimg{
+    background-image: url(./static/noise-background-02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+.page7bgimg{
+    background-image: url(./static/noise-background-04.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
 }
